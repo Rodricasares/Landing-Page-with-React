@@ -1,24 +1,55 @@
 import React from "react";
 
 //include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
+import Navbar from "./navbar.jsx";
+import Jumbotron from "./jumbotron.jsx";
+import Card from "./card_title.jsx";
+import Title from "./titles.jsx";
 //create your first component
 const Home = () => {
 	return (
-		<div>
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div className="container my-5">
+			<Navbar title="React and bootstrap" />
+			<div className="container-xxl py-5 ">
+				<Jumbotron />
+			</div>
+			<div className="row d-flex text-center py-5">
+				<Title text="Testing: Props of React " />
+			</div>
+			<div className="row">
+				<div className="col-sm-3 ms-0 ">
+					<Card
+						title="Frist Card"
+						description="Hola estoy probando el text de la primera card. Esto es una prueba,Esto es una prueba,Esto es una prueba,Esto es una prueba."
+						buttonStyle="danger"
+						button="Leer más"
+					/>
+				</div>
+				<div className="col-sm-3 mx-0">
+					<Card
+						title="Second Card"
+						description="Hola estoy probando el text de la segunda card. Esto es una prueba,Esto es una prueba,Esto es una prueba,Esto es una prueba."
+						buttonStyle="info"
+						button="Leer más"
+					/>
+				</div>
+				<div className="col-sm-3 mx-0">
+					<Card
+						title="Third Card"
+						description="Hola estoy probando el text de la tercera card. Esto es una prueba,Esto es una prueba,Esto es una prueba,Esto es una prueba."
+						buttonStyle="secondary"
+						button="Leer más"
+					/>
+				</div>
+				<div className="col-sm-3 me-0">
+					<Card
+						title="Fourth Card"
+						description="Hola estoy probando el text de la cuarta card. Esto es una prueba,Esto es una prueba,Esto es una prueba,Esto es una prueba."
+						buttonStyle="warning"
+						button="Leer más"
+					/>
+				</div>
+			</div>
 		</div>
 	);
 };
