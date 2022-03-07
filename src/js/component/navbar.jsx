@@ -13,16 +13,37 @@ const Navbar = () => {
 				</div>
 			</div>
 			<nav className="navbar navbar-dark bg-dark px-3 ">
-				<button
-					className="navbar-toggler"
-					type="button"
-					data-toggle="collapse"
-					data-target="#navbarToggleExternalContent"
-					aria-controls="navbarToggleExternalContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation">
-					<span className="navbar-toggler-icon"></span>
-				</button>
+				<div className="dropdown">
+					<a
+						className="btn btn-outline-warning dropdown-toggle"
+						href="#"
+						role="button"
+						id="dropdownMenuLink"
+						data-bs-toggle="dropdown"
+						aria-expanded="false">
+						Menu
+					</a>
+
+					<ul
+						className="dropdown-menu"
+						aria-labelledby="dropdownMenuLink">
+						<li>
+							<a className="dropdown-item" href="#">
+								Action
+							</a>
+						</li>
+						<li>
+							<a className="dropdown-item" href="#">
+								Another action
+							</a>
+						</li>
+						<li>
+							<a className="dropdown-item" href="#">
+								Something else here
+							</a>
+						</li>
+					</ul>
+				</div>
 			</nav>
 		</div>
 	);
