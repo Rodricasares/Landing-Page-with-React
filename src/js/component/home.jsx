@@ -18,7 +18,7 @@ const Home = () => {
 			</div>
 			<div className="container-sm">
 				<div className="row align-items-center">
-					<div className="col">
+					<div className="col-md-6 col-lg-3">
 						{" "}
 						<Card
 							title="Frist Card"
@@ -27,7 +27,7 @@ const Home = () => {
 							button="Leer más"
 						/>
 					</div>
-					<div className="col">
+					<div className="col-md-6 col-lg-3">
 						<Card
 							title="Second Card"
 							description="Hola estoy probando el text de la segunda card. Esto es una prueba,Esto es una prueba,Esto es una prueba,Esto es una prueba."
@@ -35,7 +35,7 @@ const Home = () => {
 							button="Leer más"
 						/>
 					</div>
-					<div className="col">
+					<div className="col-md-6 col-lg-3">
 						<Card
 							title="Third Card"
 							description="Hola estoy probando el text de la tercera card. Esto es una prueba,Esto es una prueba,Esto es una prueba,Esto es una prueba."
@@ -43,7 +43,7 @@ const Home = () => {
 							button="Leer más"
 						/>
 					</div>
-					<div className="col">
+					<div className="col-md-6 col-lg-3">
 						<Card
 							title="Fourth Card"
 							description="Hola estoy probando el text de la cuarta card. Esto es una prueba,Esto es una prueba,Esto es una prueba,Esto es una prueba."
